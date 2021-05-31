@@ -56,7 +56,7 @@ namespace ZE
                     }
                 }
             }
-            for (int i = 0; i < dataGridView1.RowCount; i++)  //1 raz
+            for (int i = 0; i < dataGridView1.RowCount; i++)
             {
                 dataGridView2.Rows[i].Cells[0].Value = dataGridView4.Rows[i].Cells[0].Value;
             }
@@ -102,6 +102,7 @@ namespace ZE
             }
             dataGridView2.RowCount = dataGridView1.RowCount;
             dataGridView3.RowCount = dataGridView1.RowCount;
+            dataGridView3.ColumnCount = dataGridView1.RowCount;
             dataGridView4.RowCount = dataGridView1.RowCount;
             dataGridView5.RowCount = dataGridView1.RowCount;
             dataGridView6.RowCount = dataGridView1.RowCount;
