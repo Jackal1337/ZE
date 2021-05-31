@@ -45,6 +45,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.dataGridView5 = new System.Windows.Forms.DataGridView();
             this.dataGridView6 = new System.Windows.Forms.DataGridView();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -55,6 +56,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 91);
             this.dataGridView1.Name = "dataGridView1";
@@ -64,7 +66,7 @@
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(498, 91);
+            this.dataGridView2.Location = new System.Drawing.Point(625, 363);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(132, 237);
             this.dataGridView2.TabIndex = 1;
@@ -72,7 +74,7 @@
             // dataGridView3
             // 
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(46, 357);
+            this.dataGridView3.Location = new System.Drawing.Point(30, 357);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.Size = new System.Drawing.Size(255, 237);
             this.dataGridView3.TabIndex = 2;
@@ -80,7 +82,7 @@
             // dataGridView4
             // 
             this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Location = new System.Drawing.Point(360, 357);
+            this.dataGridView4.Location = new System.Drawing.Point(328, 357);
             this.dataGridView4.Name = "dataGridView4";
             this.dataGridView4.Size = new System.Drawing.Size(132, 237);
             this.dataGridView4.TabIndex = 3;
@@ -97,7 +99,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(331, 357);
+            this.label2.Location = new System.Drawing.Point(299, 357);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(14, 13);
             this.label2.TabIndex = 5;
@@ -147,9 +149,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(531, 357);
+            this.button2.Location = new System.Drawing.Point(519, 81);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 48);
+            this.button2.Size = new System.Drawing.Size(75, 81);
             this.button2.TabIndex = 11;
             this.button2.Text = "Простые итерации";
             this.button2.UseVisualStyleBackColor = true;
@@ -157,7 +159,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(531, 411);
+            this.button3.Location = new System.Drawing.Point(519, 168);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 12;
@@ -188,6 +190,7 @@
             this.dataGridView5.Name = "dataGridView5";
             this.dataGridView5.Size = new System.Drawing.Size(77, 150);
             this.dataGridView5.TabIndex = 15;
+            this.dataGridView5.Visible = false;
             // 
             // dataGridView6
             // 
@@ -196,12 +199,23 @@
             this.dataGridView6.Name = "dataGridView6";
             this.dataGridView6.Size = new System.Drawing.Size(77, 150);
             this.dataGridView6.TabIndex = 16;
+            this.dataGridView6.Visible = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(622, 336);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(38, 13);
+            this.label6.TabIndex = 17;
+            this.label6.Text = "Корни";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1437, 606);
+            this.ClientSize = new System.Drawing.Size(791, 612);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.dataGridView6);
             this.Controls.Add(this.dataGridView5);
             this.Controls.Add(this.label5);
@@ -251,6 +265,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView dataGridView5;
         private System.Windows.Forms.DataGridView dataGridView6;
+        private System.Windows.Forms.Label label6;
     }
 }
 
