@@ -120,8 +120,8 @@ namespace ZE
             double EPS = 0.001;// Convert.ToDouble(textBox2.Text);
             for (int i = 0; i < dataGridView1.RowCount;i++)
             {
-                dataGridView4.Rows[i].Cells[0].Value = Convert.ToDouble(dataGridView1.Rows[i].Cells[dataGridView1.RowCount].Value.ToString()) / Convert.ToDouble(dataGridView1.Rows[i].Cells[i].Value.ToString()); //B
-                for(int j = 0; j< dataGridView1.RowCount; j++)
+                dataGridView4.Rows[i].Cells[0].Value = fix(i, dataGridView1.RowCount) / fix(i, i); //B
+                for (int j = 0; j< dataGridView1.RowCount; j++)
                 {
                     if(j==i)
                     {
